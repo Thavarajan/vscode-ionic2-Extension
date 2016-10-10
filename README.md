@@ -2,9 +2,10 @@
 
 **Ionic 2 snippets & Commands **
 
+இனிய ஆயுத பூஜை வாழ்த்துக்கள் (wish you all a happy ayudha pooja).   
 This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript and HTML.
 
-![Sample Generate command](images/ionic2_Command.gif)
+![Sample Generate command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command.gif)
 
 ## Snippets Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -55,13 +56,25 @@ press `enter` then follow the options
 * `Ionic Package`
 * `Ionic Resources`
 * `Ionic State`
+* `Log Switch`
 * `Kill running Ionic Process`
 
 So far Commands are testd in Windows 10 env only,  
 some commands will not work, if it need some input in between the Process.   
-soon open a git hub repo for update the source.
+Please report any issue in the following  repo
+https://github.com/Thavarajan/vscode-ionic2-Extension 
 
 ##### Change Log
+2.2.5  
+* Missing Windows platform option added
+* **run & emulate** commands added with options 
+* New **Log switch** command added 
+    * it enable/ disable console log and server log for running process. 
+    * currently log switch enabled for following command  
+        * serve command  
+        * run with livereload option
+        * emulate with livereload option
+  
 2.2.0
 * Ionic Generate command added in explorer context menu. 
     * Right click on the pages folder and select the ionic generate 
