@@ -2,10 +2,10 @@
 
 **Ionic 2 snippets & Commands **
 
-இனிய ஆயுத பூஜை வாழ்த்துக்கள் (wish you all a happy ayudha pooja).   
-This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript and HTML.
+This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript and HTML. also it provides some basic ionic cli commands, implement ionic site doc search inside vscode 
 
 ![Sample Generate command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command.gif)
+
 
 ## Snippets Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -58,45 +58,12 @@ press `enter` then follow the options
 * `Ionic State`
 * `Log Switch`
 * `Kill running Ionic Process`
+* `Ionic 2 Help`
+![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_helpMenu.gif)
+
+
 
 So far Commands are testd in Windows 10 env only,  
 some commands will not work, if it need some input in between the Process.   
 Please report any issue in the following  repo
 https://github.com/Thavarajan/vscode-ionic2-Extension 
-
-##### Change Log
-2.2.5  
-* Missing Windows platform option added
-* **run & emulate** commands added with options 
-* New **Log switch** command added 
-    * it enable/ disable console log and server log for running process. 
-    * currently log switch enabled for following command  
-        * serve command  
-        * run with livereload option
-        * emulate with livereload option
-  
-2.2.0
-* Ionic Generate command added in explorer context menu. 
-    * Right click on the pages folder and select the ionic generate 
-    * Enter the page name to create a page
-    * The above steps fit to the rest of the ionic generate items
-    * if you select the command any where else, it will open the usual ionic generate command
-* New Commands added 
-    * Ionic serve with options
-    * Ionic Package- Note: if login is expected, command will not work properly
-    * Ioinc Resources
-    * Ioinc State
-* In the new version of ionic cli {page}.scss is Automatically added based on import statement, so i removed the implementaion of including {page}.scss in app.core.scss file
-    
-2.1.3
-* minor bug fix for scss import statement
-
-2.1.0   
-* since finding error in output console is too hard, so shown the error in messagebox.  
-* ionic generate page command: Automatically add the scss file reference in app.core.scss
-* Add some basic validation 
-   
-2.0.0   
-* Added new commands for ionic2 cli,
-* It consumes the following commands   
-*** serve, build, generate, run, kill Process
