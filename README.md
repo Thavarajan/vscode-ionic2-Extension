@@ -59,7 +59,7 @@ press `enter` then follow the options
 * `Log Switch`
 * `Kill running Ionic Process`
 * `Ionic 2 Help`
-![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_helpMenu.gif)
+![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_HelpMenu.gif)
 
 
 
