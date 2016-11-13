@@ -1,4 +1,8 @@
 ##### Change Log
+2.3.2  
+* Added snippets for most of the icons in ionic 
+* Added fab nippet
+
 2.3.1  
 * small bug fix, thanks to Sebastian Gaul to pointing the issue 
 

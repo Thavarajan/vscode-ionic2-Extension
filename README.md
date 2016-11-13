@@ -6,6 +6,10 @@ This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript a
 
 ![Sample Generate command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command.gif)
 
+## what's New
+* New snippet _i2-fab-share_ Added
+* Snippets for most of the ionic iconc _i2-icon-[iconname]_ Added
+
 
 ## Snippets Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
@@ -27,6 +31,8 @@ i2-carousel         //Add a slider any where
 i2-radiogroup       //Add a Radio group with iterator
 i2-search           //Add a searchbar
 i2-range            //Add a Range Control
+i2-fab-share        //Add a list of fab share options
+i2-icon-[iconname]  //Added almost all the icons of Ionic expand the description for more name and css unicode
 ```
 
 ### Type Script Snippets
@@ -58,12 +64,14 @@ press `enter` then follow the options
 * `Ionic State`
 * `Log Switch`
 * `Kill running Ionic Process`
-* `Ionic 2 Help`
-![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_helpMenu.gif)
+* `Ionic 2 Help`  
+
+  Ionic 2 help document search implemented  
+![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_HelpMenu.gif)
 
 
 
 So far Commands are testd in Windows 10 env only,  
 some commands will not work, if it need some input in between the Process.   
-Please report any issue in the following  repo
+Please report any issue or suggestion in the following  repo
 https://github.com/Thavarajan/vscode-ionic2-Extension 
