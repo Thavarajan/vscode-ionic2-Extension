@@ -64,6 +64,7 @@ press `enter` then follow the options
 * `Ionic State`
 * `Log Switch`
 * `Kill running Ionic Process`
+* `Ionic 2 Help`  
 
   Ionic 2 help document search implemented  
 ![Ionic help command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command_HelpMenu.gif)
