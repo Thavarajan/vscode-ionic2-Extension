@@ -1,8 +1,19 @@
 ##### Change Log
+
+2.4.0  
+* updated the ionic data path 
+* `i2-carousel` updated to ionic 3
+* `i2-actionsheet`
+* `i2-tab` 
+
+2.3.5  
+* Implement logging colorization 
+* Add the ionic data url in the settings 
+    
 2.3.2  
 * Added snippets for most of the icons in ionic 
 * Added fab nippet
-
+  
 2.3.1  
 * small bug fix, thanks to Sebastian Gaul to pointing the issue 
 
@@ -10,7 +21,7 @@
 * Help command Added(implement search using ionic site search)
 * Select a word and open context menu select the **ionic 2 Help**
 * Select a available option in the list, it will open the related ionic doc webpage
- 
+  
 2.2.5  
 * Missing Windows platform option added
 * **run & emulate** commands added with options 

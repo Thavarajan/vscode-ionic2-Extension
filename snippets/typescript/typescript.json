@@ -1,0 +1,124 @@
+{
+    "ionic Inifinite scroll call": {
+        "prefix": "i2-infinite",
+        "description": "ionic 2 Infinite scroll items update snippet with async operation",
+        "body": [
+            "doInfinite(${infiniteScroll}) {",
+            "\t//Begin async operation",
+            "\tsetTimeout(() => {",
+            "\t\tthis.${items}.push(${values});",
+            "\t//Async operation has ended",
+            "\t${infiniteScroll}.complete();",
+            "\t}, 500);",
+            "}"
+        ]
+    },
+    "ionic Alert": {
+        "prefix": "i2-alert",
+        "description": "ionic 2 alert snippet Import and Use the alertController, don't forget to insert int the constructor",
+        "body": [
+            "// Import the AlertController from ionic package ",
+            "// Consume it in the constructor as 'alertCtrl' ",
+            "let alert = this.alertCtrl.create({",
+            "\ttitle: '${Box title}',",
+            "\tmessage: '${Message}',",
+            "\tbuttons: [",
+            "\t\t{",
+            "\t\ttext: '${Cancel}', role: 'cancel',",
+            "\t\thandler: () => {",
+            "\t\t\tconsole.log('${Cancel} clicked');",
+            "\t\t}",
+            "\t\t}, {",
+            "\t\t\ttext: '${Ok}',",
+            "\t\t\thandler: () => {",
+            "\t\t\tconsole.log('${Ok} clicked');",
+            "\t\t}",
+            "\t\t}",
+            "\t]",
+            "});",
+            "alert.present();"
+        ]
+    },
+    "ionic Custom Events": {
+        "prefix": "i2-event",
+        "description": "ionic 2 Event snippet Create and Consume",
+        "body": [
+            "// Import the Events from ionic package ",
+            "// Consume it in the constructor as 'events'",
+            "raiseEvent(${object}) {",
+            "\tthis.events.publish('${object}:${event}', ${object});",
+            "}",
+            "captureEvent() {",
+            "\tthis.events.subscribe('${object}:${event}', (${object}EventData) => {",
+            "\t\t// userEventData is an array of parameters, so grab our first and only arg",
+            "\t\tconsole.log(${object}EventData[0]);",
+            "\t});",
+            "}"
+        ]
+    },
+    "ionic Custom Event raise": {
+        "prefix": "i2-event-raise",
+        "description": "ionic 2 Event snippet for Create",
+        "body": [
+            "// Import the Events from ionic package ",
+            "// Consume it in the constructor as 'events'",
+            "raiseEvent(${object}) {",
+            "\tthis.events.publish('${object}:${event}', ${object});",
+            "}"
+        ]
+    },
+    "ionic Custom Event Handle": {
+        "prefix": "i2-event-handle",
+        "description": "ionic 2 Event snippet for Consume",
+        "body": [
+            "// Import the Events from ionic package ",
+            "// Consume it in the constructor as 'events'",
+            "captureEvent() {",
+            "\tthis.events.subscribe('${object}:${event}', (${object}EventData) => {",
+            "\t\t// userEventData is an array of parameters, so grab our first and only arg",
+            "\t\tconsole.log(${object}EventData[0]);",
+            "\t});",
+            "}"
+        ]
+    },
+    "ionic Reorder items in a list": {
+        "prefix": "i2-reorder",
+        "description": "ionic 2 Reorder an item in list",
+        "body": [
+            "// Import the reorderArray function from ionic package ",
+            "// Don't forget to bind this function to the reorder list ",
+            "reorderItems(indexes) {",
+            "\tthis.items = reorderArray(this.items, indexes);",
+            "}"
+        ]
+    },
+    "Ionic action sheet": {
+        "prefix": "i2-Action-sheet",
+        "description": "ionic 2 action sheet snippet Create and Consume",
+        "body": [
+            "let actionSheet = this.actionSheetCtrl.create({",
+            "\ttitle: '${title}',",
+            "\tbuttons: [{",
+            "\t\ttext: '${Destructive}',",
+            "\t\trole: '${destructive}',",
+            "\t\thandler: () => {",
+            "\t\t\tconsole.log('Destructive clicked');",
+            "\t\t}",
+            "\t}, {",
+            "\t\ttext: '${Archive}',",
+            "\t\thandler: () => {",
+            "\t\t\tconsole.log('Archive clicked');",
+            "\t\t}",
+            "\t}, {",
+            "\t\ttext: 'Cancel',",
+            "\t\trole: 'cancel',",
+            "\t\thandler: () => {",
+            "\t\t\t${console.log('Cancel clicke  d');}",
+            "\t\t}",
+            "\t}",
+            "\t]",
+            "});",
+            "actionSheet.present();"
+        ]
+    }
+}

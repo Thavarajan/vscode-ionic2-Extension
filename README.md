@@ -7,8 +7,10 @@ This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript a
 ![Sample Generate command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command.gif)
 
 ## what's New
-* New snippet _i2-fab-share_ Added
-* Snippets for most of the ionic iconc _i2-icon-[iconname]_ Added
+* updated the ionic data path 
+* `i2-carousel` updated to ionic 3
+* `i2-actionsheet`
+* `i2-tab` 
 
 
 ## Snippets Usage
@@ -43,6 +45,7 @@ i2-event            //ionic 2 Event snippet Create and Consume
 i2-event-raise      //ionic 2 Event snippet for Create
 i2-event-handle     //ionic 2 Event snippet for Consume
 i2-reorder          //ionic 2 Reorder an item in list
+i2-action-sheet     //ionic 2 action sheet snippet Create and Consume
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
@@ -73,5 +76,6 @@ press `enter` then follow the options
 
 So far Commands are testd in Windows 10 env only,  
 some commands will not work, if it need some input in between the Process.   
-Please report any issue or suggestion in the following  repo
+Please report any issue or suggestion in the following repo
+f any body want to share their snippets then please do it in this repo
 https://github.com/Thavarajan/vscode-ionic2-Extension 

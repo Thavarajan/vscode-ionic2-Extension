@@ -1,0 +1,211 @@
+{
+    "Ionic list": {
+        "prefix": "i2-list",
+        "body": [
+            "<ion-list>",
+            "\t<ion-list-header>",
+            "\t\t${1:Header}",
+            "\t</ion-list-header>",
+            "\t<ion-item>",
+            "\t\t${2:Itemdetails}",
+            "\t</ion-item>",
+            "</ion-list>"
+        ],
+        "description": "add a ionc list with header and item "
+    },
+    "Ionic group list": {
+        "prefix": "i2-list-grp",
+        "body": [
+            "<ion-list>",
+            "\t<ion-list-header>",
+            "\t\t${1:Header}",
+            "\t</ion-list-header>",
+            "\t<ion-item-group>",
+            "\t\t<ion-item>",
+            "\t\t\t${2:Itemdetails}",
+            "\t\t</ion-item>",
+            "\t</ion-item-group>",
+            "</ion-list>"
+        ],
+        "description": "add a ionc list with header, group and item"
+    },
+    "Ionic group list with reorder": {
+        "prefix": "i2-list-reord-grp",
+        "body": [
+            "<ion-list>",
+            "\t<ion-list-header>",
+            "\t\t${Header}",
+            "\t</ion-list-header>",
+            "\t<ion-item-group *ngFor='let ${group} of ${group}s' reorder='true' (ionItemReorder)='reorderItems($event)'>",
+            "\t\t<ion-item *ngFor='let ${item} of ${group}.items'>",
+            "\t\t\t\\{\\{${item}\\}\\}",
+            "\t\t</ion-item>",
+            "\t</ion-item-group>",
+            "</ion-list>"
+        ],
+        "description": "add a ionic group with reorder and iterator"
+    },
+    "Ionic Item group": {
+        "prefix": "i2-itm-grp",
+        "body": [
+            "<ion-item-group>",
+            "\t<ion-item>",
+            "\t\t${Itemdetails}",
+            "\t</ion-item>",
+            "</ion-item-group>"
+        ],
+        "description": "use to add a group section with an item inside an ion list"
+    },
+    "Ionic slide Item": {
+        "prefix": "i2-itm-slide",
+        "body": [
+            "<ion-item-sliding #slidingitem>",
+            "\t<ion-item>",
+            "\t\t${Itemdetails}",
+            "\t</ion-item>",
+            "<!-- slide left items down here -->",
+            "\t<ion-item-options side='left'>",
+            "\t\t<button (click)='${favorite}(slidingitem)'>${Favorite}</button>",
+            "\t</ion-item-options>",
+            "<!-- slide right items down here -->",
+            "\t<ion-item-options side='right'>",
+            "\t\t<button (click)='${unread}(slidingitem)'>${Unread}</button>",
+            "\t</ion-item-options>",
+            "</ion-item-sliding>"
+        ],
+        "description": "Add a sliding item in the list use both side"
+    },
+    "Ionic Infinite Scroll": {
+        "prefix": "i2-Infinite",
+        "body": [
+            "<!-- Add a method doInfinite -->",
+            "<ion-infinite-scroll (ionInfinite)='doInfinite($event)'>",
+            "\t<ion-infinite-scroll-content></ion-infinite-scroll-content>",
+            "</ion-infinite-scroll>"
+        ],
+        "description": "Use this Snippet at the bottom of the list also look at the method create one to access it"
+    },
+    "Ionic Item with for": {
+        "prefix": "i2-itm-for",
+        "body": [
+            "<ion-item *ngFor='let ${item} of ${item}s'>",
+            "\t\\{\\{${item}\\}\\}",
+            "</ion-item>"
+        ],
+        "description": "Add a ion item to ion-list with for loop"
+    },
+    "Ionic Item with input": {
+        "prefix": "i2-itm-input",
+        "body": [
+            "<ion-item>",
+            "\t<ion-label ${floating|stacked} >${Date}</ion-label>",
+            "\t<${ion-input} [(ngModel)]=\"${Date}\"></${ion-input}>",
+            "</ion-item>"
+        ],
+        "description": "Add a ion item to ion-list with inputs"
+    },
+    "Ionic date format": {
+        "prefix": "i2-dtFormat",
+        "body": [
+            "displayFormat=\"${DD/MM/YYYY} ${HH:mm:ss} ${A}\" pickerFormat=\"${DD MMMM YYYY} ${HH mm ss}\""
+        ],
+        "description": "Add a date format to the date field "
+    },
+    "Ionic Item": {
+        "prefix": "i2-itm",
+        "body": [
+            "<ion-item>",
+            "\t${Itemdetails}",
+            "</ion-item>"
+        ],
+        "description": "Add a ion item to ion-list"
+    },
+    "Ionic slider": {
+        "prefix": "i2-carousel",
+        "body": [
+            "<ion-slides #islide ",
+            "            [effect]= \"'${1:slide|fade|cube|coverflow|flip}'\"",
+            "            [pager]= \"'${2:false}'\" [autoplay]= \"'${3:000}'\"",
+            "            [loop]= \"'${4:true}'\" [initialSlide]= \"'${5:0}'\"",
+            "            [speed]= \"'${6:300}'\" [direction] = \"'${7:horizontal}'\"",
+            "            (ionSlideWillChange)=\"${beforeSlideChange}($event)\"",
+            "            (ionSlideDidChange)=\"${afterSlideChange}($event)\">",
+            "        ",
+            "\t<ion-slide>",
+            "\t\t<h3>${Slide1}</h3>",
+            "\t\t<p>${Detail}</p>",
+            "\t</ion-slide>",
+            "\t<ion-slide>",
+            "\t\t<h3>${Slide2}</h3>",
+            "\t\t<p>${Detail}</p>",
+            "\t</ion-slide>",
+            "\t<ion-slide>",
+            "\t\t<h3>${Slide3}</h3>",
+            "\t\t<p>${Detail}</p>",
+            "\t</ion-slide>",
+            "</ion-slides>"
+        ],
+        "description": "Add a ionic slider  with some default slides and properties"
+    },
+    "Ionic Radio Group": {
+        "prefix": "i2-radiogroup",
+        "body": [
+            "<${ion-list} radio-group [(ngModel)]=\"${selectedvalue}\">",
+            "\t<${ion-item} *ngFor=\"let ${option} of ${option}s\">",
+            "\t\t<ion-label>{{${option}.${text}}}</ion-label>",
+            "\t\t<ion-radio value=\"{{${option}.value}}\"></ion-radio>",
+            "\t</${ion-item}>",
+            "</${ion-list}>"
+        ],
+        "description": "Add a  Radio group with iterator"
+    },
+    "Ionic Search bar": {
+        "prefix": "i2-search",
+        "body": [
+            "<ion-searchbar",
+            "\t\tshowCancelButton=\"${false}\"",
+            "\t\tcancelButtonText=\"${cancel}\"",
+            "\t\tdebounce =250",
+            "\t\tplaceholder =\"Search ${1}\"",
+            "\t\t[(ngModel)]=\"${searchval}\"",
+            "\t\t(ionInput)=\"${searchItems()}\">",
+            "</ion-searchbar>"
+        ],
+        "description": "Add a searchbar"
+    },
+    "Ionic Range control": {
+        "prefix": "i2-range",
+        "body": [
+            "<ion-range min=${1:0} max=${2:100} step=${3:1} snaps=\"${4:false}\" pin=\"${5:true}\"", "           debounce=0 [(ngModel)]=\"${brightness}\">",
+            "\t<ion-icon small range-left name=\"${sunny}\"></ion-icon>",
+            "\t<ion-icon range-right name=\"${sunny}\"></ion-icon>",
+            "</ion-range>"
+        ],
+        "description": "Add a Range Control"
+    },
+    "Ionic fab button": {
+        "prefix": "i2-fab-share",
+        "body": [
+            "<ion-fab ${right} ${bottom}>",
+            "\t<button ion-fab color=\"light\"><ion-icon name=\"${arrow-dropleft}\"></ion-icon></button>",
+            "\t<ion-fab-list side=\"${left}\">",
+            "\t\t<button ion-fab (click)=\"share('fb')\"><ion-icon name=\"logo-facebook\"></ion-icon></button>",
+            "\t\t<button ion-fab (click)=\"share('tw')\"><ion-icon name=\"logo-twitter\"></ion-icon></button>",
+            "\t\t<button ion-fab (click)=\"share('vm')\"><ion-icon name=\"logo-vimeo\"></ion-icon></button>",
+            "\t\t<button ion-fab (click)=\"share('gg')\"><ion-icon name=\"logo-googleplus\"></ion-icon></button>",
+            "\t</ion-fab-list>",
+            "</ion-fab>"
+        ],
+        "description": "add a list of fab share option"
+    },
+    "Ionic tabs": {
+        "prefix": "i2-tab",
+        "body": [
+            "<ion-tabs [selectedIndex]=\"'${1}'\" (ionChange)=\"${tabchange}($event)\">",
+            "\t<ion-tab [root]=\"${2}\" [tabTitle]=\"'${3:people}'\" [tabIcon]=\"'${contact}'\"></ion-tab>",
+            "\t<ion-tab [root]=\"${4}\" [tabTitle]=\"'${5:favourite}'\" [tabIcon]=\"'${heart}'\"></ion-tab>",
+            "</ion-tabs>"
+        ],
+        "description": "add a list of fab share option"
+    }
+}
