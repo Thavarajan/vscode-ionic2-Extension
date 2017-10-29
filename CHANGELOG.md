@@ -1,5 +1,9 @@
 ##### Change Log
 
+3.0.0  
+* updated all the snippets with for latest vscode snippet options 
+* `i2-[variable-name]` ionic scss variables added with default values 
+
 2.4.0  
 * updated the ionic data path 
 * `i2-carousel` updated to ionic 3

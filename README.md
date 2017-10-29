@@ -1,16 +1,14 @@
 # ionic 2 Commands & Snippets for VS Code
 
-**Ionic 2 snippets & Commands **
+*Ionic 2 snippets & Commands*
 
-This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript and HTML. also it provides some basic ionic cli commands, implement ionic site doc search inside vscode 
+This extension for Visual Studio Code adds snippets for ionic 2 for TypeScript, scss and HTML. also it provides some basic ionic cli commands, implement ionic site doc search inside vscode 
 
 ![Sample Generate command](https://raw.githubusercontent.com/Thavarajan/vscode-ionic2-Extension/master/images/ionic2_Command.gif)
 
 ## what's New
-* updated the ionic data path 
-* `i2-carousel` updated to ionic 3
-* `i2-actionsheet`
-* `i2-tab` 
+* updated all the snippets with latest vscode snippet options 
+* `i2-[variable-name]` ionic scss variables added with default values 
 
 
 ## Snippets Usage
@@ -34,6 +32,7 @@ i2-radiogroup       //Add a Radio group with iterator
 i2-search           //Add a searchbar
 i2-range            //Add a Range Control
 i2-fab-share        //Add a list of fab share options
+i2-tab              //add a list of tabs
 i2-icon-[iconname]  //Added almost all the icons of Ionic expand the description for more name and css unicode
 ```
 
@@ -46,6 +45,11 @@ i2-event-raise      //ionic 2 Event snippet for Create
 i2-event-handle     //ionic 2 Event snippet for Consume
 i2-reorder          //ionic 2 Reorder an item in list
 i2-action-sheet     //ionic 2 action sheet snippet Create and Consume
+```
+
+### SASS Snippets
+```Typescript  
+i2-[ionic scss variable name] // almost all the ionic variables are included
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
@@ -76,6 +80,4 @@ press `enter` then follow the options
 
 So far Commands are testd in Windows 10 env only,  
 some commands will not work, if it need some input in between the Process.   
-Please report any issue or suggestion in the following repo
-f any body want to share their snippets then please do it in this repo
-https://github.com/Thavarajan/vscode-ionic2-Extension 
+Please report any issue or suggestion in the following repo https://github.com/Thavarajan/vscode-ionic2-Extension  
